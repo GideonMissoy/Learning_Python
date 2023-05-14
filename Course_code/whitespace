@@ -1,0 +1,6 @@
+"""This script shows how to strip whitespaces from a variable
+then associating the stripped value with the original variable"""
+>>> favorite_language = 'python '
+>>> favorite_language = favorite_language.rstrip() #strip whitespace from the right
+>>> favorite_language = favorite_language.lstrip() #strip whitespace from the left
+>>> favorite_language = favorite_language.strip() #strip whitespace from both sides

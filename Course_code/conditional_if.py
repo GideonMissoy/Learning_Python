@@ -43,3 +43,20 @@ if age_0 >= 21 and age_1 >= 21:
     print(True)
 else:
     print("Both conditions haven't been met")
+
+# Checking whether a value is in a list
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+if 'mushrooms' in requested_toppings:
+    print("Mushrooms are available")
+else:
+    print("Sorry, we don't have mushrooms today. Would you like something else?")
+if 'pepperoni' in requested_toppings:
+    print("pepperoni is available")
+else:
+    print("Sorry, we don't have pepperoni today. Would you like something else instead?")
+
+# Checking whether a value is Not in a list
+banned_users = ['andrew', 'carolina', 'david']
+user = 'marie'
+if user not in banned_users:
+    print(f"{user.title()}, you can post a response if you wish")

@@ -23,6 +23,10 @@ for alien in aliens[:3]:
         alien['color'] = 'yellow'
         alien['speed'] = 'medium'
         alien['points'] = 10
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
 
 # Show the first five aliens.
 for alien in aliens[:5]:
@@ -31,3 +35,34 @@ print("...")
 
 # Show how many aliens have been created.
 print(f"Total number of aliens: {len(aliens)}")
+
+
+""" How to nest and access a list in a dictionary. """
+# Store info about a pizza being ordered.
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+}
+
+# Summarize the order
+print(f"You ordered a {pizza['crust']}-crust pizza "
+      "with the following toppings:")
+for topping in pizza['toppings']:
+    print(f"\t{topping.title()}")
+
+"""Example using favorite_languages poll, but wtih a user having
+more than one favorites. """
+favorite_languages = {
+    'jen': ['python', 'django'],
+    'sarah': ['rust'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'haskell'],
+    }
+
+for name, languages in favorite_languages.items():
+    if len(languages) == 1:
+        print(f"\n{name.title()}'s favorite language is {language.title()}")
+    elif len(languages) > 1:
+        print(f"\n{name.title()}'s favorite languages are:")
+        for language in languages:
+            print(f"\t{language.title()}")

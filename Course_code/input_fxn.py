@@ -24,3 +24,12 @@ if height >= 48:
     print(f"\n{name}, you're tall enough to ride!")
 else:
     print(f"Sorry {name}, you'll be able to ride when you're a little older.")
+
+# The modulo operator
+number = input("Enter a number, and I'll tell you if it's even or odd: ")
+number = int(number)
+
+if number % 2 == 0:
+    print(f"The number {number} is even")
+else:
+    print(f"The number {number} is odd.")

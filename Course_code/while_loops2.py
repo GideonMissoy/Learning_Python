@@ -18,3 +18,12 @@ while unconfirmed_users:
 print("\nThe following users have been confirmed:")
 for confirmed_user in confirmed_users:
     print(f"\t{confirmed_user.title()}")
+
+# 2. Removing all instances of specific values from a list.
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+
+while 'cat' in pets:
+    pets.remove('cat')
+
+print(pets)

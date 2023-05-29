@@ -6,3 +6,5 @@ def get_formatted_name(first_name, last_name):
 
 musician = get_formatted_name('jini', 'hendrix')
 print(musician)
+
+

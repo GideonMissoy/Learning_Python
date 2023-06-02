@@ -11,3 +11,14 @@ from pizza import make_pizza # With this syntax, you don't need to use the dot n
 # in the import statement, we can call it by name when we use the function.
 
 make_pizza(16, 'pepperoni')
+
+# Using as to give a function an alias
+from pizza import make_pizza as mp
+# The import statement renames the function make_pizza() to mp() in this program
+
+
+# Using as to give a module an alias
+import pizza as p
+
+# Importing all functions in a module
+from pizza import *

@@ -1,3 +1,4 @@
+# Importing multiple classes from a module.
 from car1 import Car, ElectricCar
 
 my_mustang = Car('ford', 'mustang', 2024)

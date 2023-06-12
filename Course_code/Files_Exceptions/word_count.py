@@ -18,3 +18,13 @@ filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt',
 for filename in filenames:
     path = Path(filename)
     count_words(path)
+
+"""
+Assuming only siddhartha.txt file is not found:
+Using the try-except block provides 2 significant advantages:
+1. We prevent our users from seeing a traceback
+2. We let the program continue analyzing the tests it's able to find.
+If we don't catch the FileNotFoundError that siddhartha.txt raises,
+the user would see a full traceback, and the program would stop running after
+trying to analuze Siddhartha. It would never analyze Moby Dick and Little Women.
+"""

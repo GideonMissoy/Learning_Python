@@ -8,3 +8,8 @@ class Topic(models.Model):
     def __str__(self):
         """Return a string representation of the model."""
         return self.text
+class Book(models.Model):
+    name = models.CharField(max_length=200)
+    topic = models.models.ForeignKey(Topic, verbose_name=_("topic"), on_delete=models.CASCADE)
+    
+    

@@ -1,0 +1,11 @@
+from textblob import TextBlob
+
+t = 1
+while t:
+    a = input("Enter the word to be checked:- ")
+    print("original text: "+str(a))
+    
+    b = TextBlob(a)
+    # Prints the corrected spelling
+    print("corrected text: "+str(b.correct()))
+    t = int(input("Try again? 1 : 0"))

@@ -5,3 +5,4 @@ Link to the book:
 https://nostarch.com/python-crash-course-3rd-edition
 
 If you are reading this then it will be easier following along with my code while you read the book.
+Part of the code has been organized in sub-directories based on the chapters.
